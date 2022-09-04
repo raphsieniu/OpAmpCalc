@@ -1,5 +1,7 @@
 using System;
-//using System.IO;
+using System.IO;
+
+using System.Globalization;
 
 public class OpAmpCalc
 {
@@ -9,16 +11,18 @@ public class OpAmpCalc
 		double m=0, b=0;
 		double R1=1,R2=1,Rf=1,Rg=1,Rg2=1;
 		string input;
-	
-	//Console.Write("Press any key to begin...");
-	//Console.ReadKey();
 		
 	Console.Write("Voltage level of a stable reference, Vref[V] = ");
 	input=Console.ReadLine();
-	Vref=Convert.ToDouble(input);
+	Vref=double.Parse(input, CultureInfo.InvariantCulture);
 	
 	Console.Write("Full-scale output voltage, Vout_fs[V] = ");
 	input=Console.ReadLine();
-	Vout_fs=Convert.ToDouble(input);
+	Vout_fs=double.Parse(input, CultureInfo.InvariantCulture);
+	
+	
+	
+	//Console.Write("Press any key...");
+	//Console.ReadKey();
 	}
 }
