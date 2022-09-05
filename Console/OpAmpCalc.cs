@@ -9,7 +9,7 @@ public class OpAmpCalc
     {
 		double Vref=0, Vref1=0, Vout_fs=0, Vout_zs=0, Vin_fs=0, Vin_zs=0;
 		double m=0, b=0;
-		double R1=1, R2=1, Rf=1, Rg=1, Rg1=1, Rg2=1;
+		unsigned double R1=1, R2=1, Rf=1, Rg=1, Rg1=1, Rg2=1;
 		string input;
 	
 	do
